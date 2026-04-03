@@ -1,0 +1,394 @@
+I need <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Master Bet</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to right, #1a1a1a, #0d0d0d);
+        color: #fff;
+    }
+    header {
+        background-color: #ffcc00;
+        color: #000;
+        padding: 20px;
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    .login, .mikeka-list {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
+    }
+    input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 10px;
+        border: none;
+    }
+    button {
+        width: 100%;
+        padding: 12px;
+        background-color: #ffcc00;
+        border: none;
+        border-radius: 10px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #e6b800;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .mikeka {
+        background-color: rgba(255, 255, 255, 0.1);
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .mikeka p {
+        margin: 5px 0;
+    }
+    .vip {
+        background-color: rgba(255, 215, 0, 0.2);
+        border: 1px solid #ffcc00;
+    }
+    .vip-contact {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 1em;
+        color: #ffcc00;
+    }
+</style>
+</head>
+<body>
+
+<header>Master Bet</header>
+
+<div class="login">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+</div>
+
+<div class="mikeka-list" id="mikekaList" style="display:none;">
+    <h2>Today's Mikeka</h2>
+    <!-- Free mikeka -->
+    <div class="mikeka">
+        <p><strong>Match:</strong> Man Utd vs Liverpool</p>
+        <p><strong>Bet:</strong> Man Utd win</p>
+        <p><strong>Odds:</strong> 2.1</p>
+    </div>
+    <div class="mikeka">
+        <p><strong>Match:</strong> Real Madrid vs Barcelona</p>
+        <p><strong>Bet:</strong> Draw</p>
+        <p><strong>Odds:</strong> 3.2</p>
+    </div>
+
+    <!-- VIP mikeka -->
+    <h2>🔥 VIP Mikeka 🔥</h2>
+    <div class="mikeka vip">
+        <p><strong>Match:</strong> PSG vs Bayern</p>
+        <p><strong>Bet:</strong> PSG win</p>
+        <p><strong>Odds:</strong> 1.8</p>
+    </div>
+    <div class="mikeka vip">
+        <p><strong>Match:</strong> Chelsea vs Arsenal</p>
+        <p><strong>Bet:</strong> Arsenal win</p>
+        <p><strong>Odds:</strong> 2.5</p>
+    </div>
+
+    <div class="vip-contact">
+        🏆 To access more VIP mikeka, contact admin: <strong>0615887296</strong>
+    </div>
+</div>
+
+<script>
+function login() {
+    const user = document.getElementById('username').value;
+    const pass = document.getElementById('password').value;
+    if(user === "master" && pass === "1234") {
+        document.querySelector('.login').style.display = 'none';
+        document.getElementById('mikekaList').style.display = 'block';
+    } else {
+        alert("Invalid credentials!");
+    }
+}
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Master Bet</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to right, #1a1a1a, #0d0d0d);
+        color: #fff;
+    }
+    header {
+        background-color: #ffcc00;
+        color: #000;
+        padding: 20px;
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    .login, .mikeka-list {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
+    }
+    input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 10px;
+        border: none;
+    }
+    button {
+        width: 100%;
+        padding: 12px;
+        background-color: #ffcc00;
+        border: none;
+        border-radius: 10px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #e6b800;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .mikeka {
+        background-color: rgba(255, 255, 255, 0.1);
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .mikeka p {
+        margin: 5px 0;
+    }
+    .vip {
+        background-color: rgba(255, 215, 0, 0.2);
+        border: 1px solid #ffcc00;
+    }
+    .vip-contact {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 1em;
+        color: #ffcc00;
+    }
+</style>
+</head>
+<body>
+
+<header>Master Bet</header>
+
+<div class="login">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+</div>
+
+<div class="mikeka-list" id="mikekaList" style="display:none;">
+    <h2>Today's Mikeka</h2>
+    <!-- Free mikeka -->
+    <div class="mikeka">
+        <p><strong>Match:</strong> Man Utd vs Liverpool</p>
+        <p><strong>Bet:</strong> Man Utd win</p>
+        <p><strong>Odds:</strong> 2.1</p>
+    </div>
+    <div class="mikeka">
+        <p><strong>Match:</strong> Real Madrid vs Barcelona</p>
+        <p><strong>Bet:</strong> Draw</p>
+        <p><strong>Odds:</strong> 3.2</p>
+    </div>
+
+    <!-- VIP mikeka -->
+    <h2>🔥 VIP Mikeka 🔥</h2>
+    <div class="mikeka vip">
+        <p><strong>Match:</strong> PSG vs Bayern</p>
+        <p><strong>Bet:</strong> PSG win</p>
+        <p><strong>Odds:</strong> 1.8</p>
+    </div>
+    <div class="mikeka vip">
+        <p><strong>Match:</strong> Chelsea vs Arsenal</p>
+        <p><strong>Bet:</strong> Arsenal win</p>
+        <p><strong>Odds:</strong> 2.5</p>
+    </div>
+
+    <div class="vip-contact">
+        🏆 To access more VIP mikeka, contact admin: <strong>0615887296</strong>
+    </div>
+</div>
+
+<script>
+function login() {
+    const user = document.getElementById('username').value;
+    const pass = document.getElementById('password').value;
+    if(user === "master" && pass === "1234") {
+        document.querySelector('.login').style.display = 'none';
+        document.getElementById('mikekaList').style.display = 'block';
+    } else {
+        alert("Invalid credentials!");
+    }
+}
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Master Bet</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to right, #1a1a1a, #0d0d0d);
+        color: #fff;
+    }
+    header {
+        background-color: #ffcc00;
+        color: #000;
+        padding: 20px;
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    .login, .mikeka-list {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
+    }
+    input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 10px;
+        border: none;
+    }
+    button {
+        width: 100%;
+        padding: 12px;
+        background-color: #ffcc00;
+        border: none;
+        border-radius: 10px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #e6b800;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .mikeka {
+        background-color: rgba(255, 255, 255, 0.1);
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .mikeka p {
+        margin: 5px 0;
+    }
+    .vip {
+        background-color: rgba(255, 215, 0, 0.2);
+        border: 1px solid #ffcc00;
+    }
+    .vip-contact {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 1em;
+        color: #ffcc00;
+    }
+</style>
+</head>
+<body>
+
+<header>Master Bet</header>
+
+<div class="login">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+</div>
+
+<div class="mikeka-list" id="mikekaList" style="display:none;">
+    <h2>Today's Mikeka</h2>
+    <!-- Free mikeka -->
+    <div class="mikeka">
+        <p><strong>Match:</strong> Man Utd vs Liverpool</p>
+        <p><strong>Bet:</strong> Man Utd win</p>
+        <p><strong>Odds:</strong> 2.1</p>
+    </div>
+    <div class="mikeka">
+        <p><strong>Match:</strong> Real Madrid vs Barcelona</p>
+        <p><strong>Bet:</strong> Draw</p>
+        <p><strong>Odds:</strong> 3.2</p>
+    </div>
+
+    <!-- VIP mikeka -->
+    <h2>🔥 VIP Mikeka 🔥</h2>
+    <div class="mikeka vip">
+        <p><strong>Match:</strong> PSG vs Bayern</p>
+        <p><strong>Bet:</strong> PSG win</p>
+        <p><strong>Odds:</strong> 1.8</p>
+    </div>
+    <div class="mikeka vip">
+        <p><strong>Match:</strong> Chelsea vs Arsenal</p>
+        <p><strong>Bet:</strong> Arsenal win</p>
+        <p><strong>Odds:</strong> 2.5</p>
+    </div>
+
+    <div class="vip-contact">
+        🏆 To access more VIP mikeka, contact admin: <strong>0615887296</strong>
+    </div>
+</div>
+
+<script>
+function login() {
+    const user = document.getElementById('username').value;
+    const pass = document.getElementById('password').value;
+    if(user === "master" && pass === "1234") {
+        document.querySelector('.login').style.display = 'none';
+        document.getElementById('mikekaList').style.display = 'block';
+    } else {
+        alert("Invalid credentials!");
+    }
+}
+</script>
+
+</body>
+</html>
